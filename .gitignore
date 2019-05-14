@@ -1,0 +1,6 @@
+# for idea
+.vscode/
+.idea
+
+#for system
+.DS_Store
