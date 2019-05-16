@@ -4,3 +4,7 @@
 
 #for system
 .DS_Store
+
+
+# for model
+*.h5
