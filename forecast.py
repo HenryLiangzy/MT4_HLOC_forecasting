@@ -110,10 +110,10 @@ model.add(layers.Dense(36, activation="relu"))
 
 # for hidden layer
 model.add(layers.Dense(18, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
-model.add(layers.Dense(18, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
-model.add(layers.Dense(18, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
-model.add(layers.Dense(18, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
-model.add(layers.Dense(18, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
+# model.add(layers.Dense(18, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
+# model.add(layers.Dense(18, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
+# model.add(layers.Dense(18, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
+# model.add(layers.Dense(18, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
 
 # for output layer
 model.add(layers.Dense(4, activation="relu", bias_initializer=tf.keras.initializers.constant(1.0)))
@@ -127,7 +127,7 @@ model.compile(optimizer=keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999
 
 # fit the model
 # 
-model.fit(inputData, outputData, epochs=15, batch_size=18)
+model.fit(inputData, outputData, epochs=10, batch_size=18)
 
 # evaluate the result
 print("Priting the evaluate result")
